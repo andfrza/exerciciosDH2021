@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="26dp"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card1"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardCornerRadius="50dp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imagem1"
+        android:scaleType="centerCrop"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/curitiba" />
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imagem2"
+        android:layout_margin="25dp"
+        app:layout_constraintStart_toStartOf="@id/card1"
+        app:layout_constraintTop_toBottomOf="@id/card1"
+        app:layout_constraintEnd_toEndOf="@id/card1"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:background="@drawable/curitiba"/>
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_margin="25dp"
+        app:layout_constraintStart_toStartOf="@+id/imagem2"
+        app:layout_constraintTop_toBottomOf="@+id/imagem2"
+        app:layout_constraintEnd_toEndOf="@+id/imagem2"
+        android:text="Curitiba é a capital do Paraná, um dos três Estados que compõem a Região Sul do Brasil. Sua fundação oficial data de 29 de março de 1693, quando foi criada a Câmara. No século XVII, sua principal atividade econômica era a mineração, aliada à agricultura de subsistência."/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
