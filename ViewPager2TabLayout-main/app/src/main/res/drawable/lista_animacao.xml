@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+    <item android:drawable="@drawable/ic_android_black_24dp" android:duration="1000"/>
+    <item android:drawable="@drawable/ic_baseline_accessible_24" android:duration="1000"/>
+    <item android:drawable="@drawable/ic_baseline_add_24" android:duration="1000"/>
+    <item android:drawable="@drawable/ic_baseline_add_a_photo_24" android:duration="1000"/>
+</animation-list>

@@ -1,0 +1,15 @@
+<!-- fragment_screen_slide_page.xml -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4CAF50">
+
+    <TextView
+        android:padding="16dp"
+        android:lineSpacingMultiplier="1.2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="28sp"
+        android:text="Crie um arquivo de layout que você usará posteriormente para o conteúdo de um fragmento. Você também precisará definir uma string para o conteúdo do fragmento. O exemplo a seguir contém uma visualização de texto que exibe esse tipo de conteúdo" />
+</ScrollView>
