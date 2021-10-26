@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        app:constraintSetEnd="@id/end"
+        app:constraintSetStart="@+id/start"
+        app:duration="5000"
+        app:motionInterpolator="linear">
+
+        <OnSwipe
+            app:touchAnchorId="@id/container"
+            app:touchAnchorSide="top"
+            app:dragDirection="dragUp"/>
+
+    </Transition>
+
+    <ConstraintSet
+        android:id="@+id/start">
+        <Constraint
+            android:id="@+id/container"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="30dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <CustomAttribute
+                app:attributeName="textColor"
+                app:customColorValue="@color/purple_500"/>
+        </Constraint>
+
+    </ConstraintSet>
+
+    <ConstraintSet
+        android:id="@+id/end">
+        <Constraint
+            android:id="@id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <CustomAttribute
+                app:attributeName="textColor"
+                app:customColorValue="@color/teal_700"/>
+
+        </Constraint>
+
+    </ConstraintSet>
+
+</MotionScene>
