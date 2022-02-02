@@ -4,4 +4,5 @@
         android:state_selected="true"/>
     <item android:drawable="@drawable/ponto_padrao"/>
 
+
 </selector>
