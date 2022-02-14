@@ -3,23 +3,29 @@ package com.example.doctor.login
 import android.content.Context
 import android.os.Bundle
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
 import android.widget.Button
-import android.widget.EditText
-import android.widget.TextView
 import com.example.doctor.R
+import com.example.doctor.login.repository.ValidarLogin
+import com.google.android.material.textfield.TextInputEditText
 import java.lang.RuntimeException
 
-class Fragment_Login : Fragment(R.layout.fragment_login) {
+class FragmentLogin : Fragment(R.layout.fragment_login) {
 
+    private var listener: IshowForgotPasswordDialog? = null
     private val button_forgot_password: Button?
         get() = view?.findViewById(R.id.button_forgot_password)
-    private var listener: IshowForgotPasswordDialog? = null
+    private val button_login: Button?
+        get() = view?.findViewById(R.id.button_login)
+    private val email: TextInputEditText?
+        get() = view?.findViewById(R.id.textField_email_input)
+    private val senha: TextInputEditText?
+        get() = view?.findViewById(R.id.textField_password_input)
+
 
     interface IshowForgotPasswordDialog{
         fun showDialogBox()
+        fun dadosCadastro(validarLogin: ValidarLogin)
     }
 
     override fun onAttach(context: Context) {
@@ -36,6 +42,9 @@ class Fragment_Login : Fragment(R.layout.fragment_login) {
 
         button_forgot_password?.setOnClickListener {
             listener?.showDialogBox()
+        }
+        button_login?.setOnClickListener {
+            listener?.dadosCadastro(ValidarLogin(email?.text.toString(),senha?.text.toString()))
         }
     }
 }

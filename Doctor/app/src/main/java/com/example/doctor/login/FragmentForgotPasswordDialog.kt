@@ -4,11 +4,10 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import com.example.doctor.R
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 
-class Fragment_ForgotPasswordDialog : BottomSheetDialogFragment() {
+class FragmentForgotPasswordDialog : BottomSheetDialogFragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
