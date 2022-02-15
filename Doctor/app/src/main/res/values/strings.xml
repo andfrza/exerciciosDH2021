@@ -12,4 +12,5 @@
     <string name="fragment_signup_login">Have an account? Log in</string>
     <string name="activity_profile_screen_title">Set up your profile</string>
     <string name="activity_profile_screen_subtitle">Update your profile to connect your doctor with better impression.</string>
+    <string name="activity_profile_screen_title_2">Personal information</string>
 </resources>
