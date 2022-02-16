@@ -6,9 +6,12 @@
         <entry key="..\:/exerciciosDH2021/Doctor/app/src/main/res/drawable/background_external_login_button.xml" value="0.2203125" />
         <entry key="..\:/exerciciosDH2021/Doctor/app/src/main/res/drawable/background_login.xml" value="0.2203125" />
         <entry key="..\:/exerciciosDH2021/Doctor/app/src/main/res/drawable/background_main_button.xml" value="0.2203125" />
+        <entry key="..\:/exerciciosDH2021/Doctor/app/src/main/res/drawable/background_profile_view.xml" value="0.2203125" />
+        <entry key="..\:/exerciciosDH2021/Doctor/app/src/main/res/drawable/ic_camera.xml" value="0.2203125" />
         <entry key="..\:/exerciciosDH2021/Doctor/app/src/main/res/layout/activity_base.xml" value="0.20416666666666666" />
         <entry key="..\:/exerciciosDH2021/Doctor/app/src/main/res/layout/activity_login.xml" value="0.19067028985507245" />
         <entry key="..\:/exerciciosDH2021/Doctor/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/exerciciosDH2021/Doctor/app/src/main/res/layout/activity_profile.xml" value="0.2" />
         <entry key="..\:/exerciciosDH2021/Doctor/app/src/main/res/layout/fragment_forgot_password_dialog.xml" value="0.20416666666666666" />
         <entry key="..\:/exerciciosDH2021/Doctor/app/src/main/res/layout/fragment_login.xml" value="0.2" />
         <entry key="..\:/exerciciosDH2021/Doctor/app/src/main/res/layout/fragment_signup.xml" value="0.33" />

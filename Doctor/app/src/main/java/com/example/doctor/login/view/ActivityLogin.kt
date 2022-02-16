@@ -1,21 +1,22 @@
-package com.example.doctor.login
+package com.example.doctor.login.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.activity.viewModels
 import com.example.doctor.R
 import com.example.doctor.login.loginviewmodel.LoginViewModel
-import com.example.doctor.login.repository.ValidarLogin
+import com.example.doctor.login.model.ValidarLogin
 
-class ActivityLogin : AppCompatActivity(R.layout.activity_login), FragmentLogin.IshowForgotPasswordDialog {
+class ActivityLogin : AppCompatActivity(R.layout.activity_login),
+    FragmentLogin.IshowForgotPasswordDialog {
 
-    val viewModel:LoginViewModel by viewModels()
+    private val viewModel:LoginViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         supportFragmentManager.beginTransaction()
-            .add(R.id.inflater,FragmentLogin())
+            .add(R.id.inflater, FragmentLogin())
             .commit()
 
         observe()
@@ -24,7 +25,7 @@ class ActivityLogin : AppCompatActivity(R.layout.activity_login), FragmentLogin.
     //Funções de comunicação com o fragmento:
     override fun showForgotPasswordDialogBox() {
         val dialog = FragmentForgotPasswordDialog()
-        dialog.show(supportFragmentManager,FragmentForgotPasswordDialog.TAG)
+        dialog.show(supportFragmentManager, FragmentForgotPasswordDialog.TAG)
     }
     override fun dadosCadastro(dadosLogin: ValidarLogin){
         viewModel.verificarCadastro(dadosLogin)

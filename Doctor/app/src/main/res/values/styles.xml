@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="card_title_dark_green" parent="Theme.Doctor">
+        <item name="android:textColor">@color/dark_green</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+    <style name="title_white" parent="Theme.Doctor">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="title_white_2" parent="title_white">
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="title_black" parent="title_white_2">
+        <item name="android:textColor">#333333</item>
+    </style>
+    <style name="subtitle_white" parent="title_white">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="card_subtitle_gray" parent="Theme.Doctor">
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+</resources>
