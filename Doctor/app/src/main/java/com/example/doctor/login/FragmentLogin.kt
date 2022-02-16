@@ -24,7 +24,7 @@ class FragmentLogin : Fragment(R.layout.fragment_login) {
 
 
     interface IshowForgotPasswordDialog{
-        fun showDialogBox()
+        fun showForgotPasswordDialogBox()
         fun dadosCadastro(validarLogin: ValidarLogin)
     }
 
@@ -41,7 +41,7 @@ class FragmentLogin : Fragment(R.layout.fragment_login) {
         super.onViewCreated(view, savedInstanceState)
 
         button_forgot_password?.setOnClickListener {
-            listener?.showDialogBox()
+            listener?.showForgotPasswordDialogBox()
         }
         button_login?.setOnClickListener {
             listener?.dadosCadastro(ValidarLogin(email?.text.toString(),senha?.text.toString()))

@@ -2,7 +2,6 @@ package com.example.doctor.login
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
 import androidx.activity.viewModels
 import com.example.doctor.R
 import com.example.doctor.login.loginviewmodel.LoginViewModel
@@ -23,7 +22,7 @@ class ActivityLogin : AppCompatActivity(R.layout.activity_login), FragmentLogin.
     }
 
     //Funções de comunicação com o fragmento:
-    override fun showDialogBox() {
+    override fun showForgotPasswordDialogBox() {
         val dialog = FragmentForgotPasswordDialog()
         dialog.show(supportFragmentManager,FragmentForgotPasswordDialog.TAG)
     }
@@ -32,9 +31,13 @@ class ActivityLogin : AppCompatActivity(R.layout.activity_login), FragmentLogin.
     }
 
     //Função para o tratamento de LiveData, retornando uma autenticação para o login:
+    private fun showLoginStatusDialogBox(){
+
+    }
+
     private fun observe(){
         viewModel.login.observe(this){
-            if(it){showDialogBox()}
+            if(it){showForgotPasswordDialogBox()}
         }
     }
 }
