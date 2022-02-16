@@ -13,4 +13,5 @@
     <string name="activity_profile_screen_title">Set up your profile</string>
     <string name="activity_profile_screen_subtitle">Update your profile to connect your doctor with better impression.</string>
     <string name="activity_profile_screen_title_2">Personal information</string>
+    <string name="fragment_login_status_dialog_mensagem">Login e/ou senha inválido!</string>
 </resources>
