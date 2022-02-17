@@ -6,7 +6,7 @@ import androidx.activity.viewModels
 import androidx.coordinatorlayout.widget.CoordinatorLayout
 import com.example.doctor.R
 import com.example.doctor.login.loginviewmodel.LoginViewModel
-import com.example.doctor.login.model.ValidarLogin
+import com.example.doctor.login.data.ValidarLogin
 import com.google.android.material.snackbar.Snackbar
 
 class ActivityLogin : AppCompatActivity(R.layout.activity_login),

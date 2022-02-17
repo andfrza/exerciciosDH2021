@@ -3,7 +3,7 @@ package com.example.doctor.login.loginviewmodel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.doctor.login.model.ValidarLogin
+import com.example.doctor.login.data.ValidarLogin
 
 class LoginViewModel: ViewModel() {
     private val _login = MutableLiveData<Boolean>()

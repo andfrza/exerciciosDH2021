@@ -5,10 +5,8 @@ import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.View
 import android.widget.Button
-import android.widget.Toast
 import com.example.doctor.R
-import com.example.doctor.login.model.ValidarLogin
-import com.google.android.material.snackbar.Snackbar
+import com.example.doctor.login.data.ValidarLogin
 import com.google.android.material.textfield.TextInputEditText
 import java.lang.RuntimeException
 
