@@ -8,7 +8,6 @@ import androidx.activity.viewModels
 import androidx.core.view.isVisible
 import com.example.doctor.R
 import com.example.doctor.doctor.feature.profile.viewmodel.ProfileViewModel
-import com.google.android.material.textfield.TextInputEditText
 
 class ActivityProfile : AppCompatActivity(R.layout.activity_profile) {
 
@@ -36,9 +35,9 @@ class ActivityProfile : AppCompatActivity(R.layout.activity_profile) {
             loading.isVisible = it
         }
         viewModel.profile.observe(this){
-            name.text = it.name.firstName
+            name.text = it.name.first
             number.text = it.phone
-            //birth.text = it.birthday.date as String
+            birth.text = it.registered.date
             location.text = it.location.city
         }
     }
