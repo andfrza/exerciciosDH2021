@@ -1,4 +1,4 @@
-package com.example.doctor.login.data
+package com.example.doctor.doctor.data.model
 
 class ValidarLogin(private val login:String, private val senha:String) {
 

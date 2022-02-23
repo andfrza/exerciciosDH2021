@@ -1,4 +1,4 @@
-package profile
+package com.example.doctor.doctor.data.factory
 
 import com.google.gson.GsonBuilder
 

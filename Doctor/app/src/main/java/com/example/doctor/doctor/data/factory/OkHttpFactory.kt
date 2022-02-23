@@ -1,9 +1,11 @@
-package profile
+package com.example.doctor.doctor.data.factory
 
 import com.example.doctor.BuildConfig
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import java.util.concurrent.TimeUnit
+
+//O apply está retornando os métodos do Builder.
 
 object OkHttpFactory {
     fun build() = OkHttpClient.Builder().apply {

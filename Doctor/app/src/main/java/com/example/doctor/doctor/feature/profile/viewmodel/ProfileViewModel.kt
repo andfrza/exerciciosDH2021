@@ -1,10 +1,16 @@
-package profile
+package com.example.doctor.doctor.feature.profile.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.example.doctor.doctor.data.model.ProfileItem
+import com.example.doctor.doctor.data.repository.UserRepository
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.flow.catch
+import kotlinx.coroutines.flow.collect
+import kotlinx.coroutines.flow.onCompletion
+import kotlinx.coroutines.flow.onStart
 import kotlinx.coroutines.launch
 
 class ProfileViewModel(private val repository: UserRepository = UserRepository.instance): ViewModel() {
@@ -27,8 +33,8 @@ class ProfileViewModel(private val repository: UserRepository = UserRepository.i
                 .onStart{_loading.postValue(true)}
                 .catch{_error.postValue(true)}
                 .onCompletion{_loading.postValue(false)}
-                .collect{
-                    _profile.value = it.results.first()
+                .collect {
+                    _profile.postValue(it.results.first())
                 }
         }
     }

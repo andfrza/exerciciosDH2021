@@ -1,4 +1,4 @@
-package com.example.doctor.login.view
+package com.example.doctor.doctor.feature.login.view
 
 import android.os.Bundle
 import android.view.LayoutInflater

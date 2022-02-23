@@ -1,4 +1,4 @@
-package com.example.doctor.login.view
+package com.example.doctor.doctor.feature.login.view
 
 import android.content.Context
 import android.os.Bundle
@@ -6,7 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.View
 import android.widget.Button
 import com.example.doctor.R
-import com.example.doctor.login.data.ValidarLogin
+import com.example.doctor.doctor.data.model.ValidarLogin
 import com.google.android.material.textfield.TextInputEditText
 import java.lang.RuntimeException
 

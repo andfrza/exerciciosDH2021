@@ -1,5 +1,0 @@
-package profile
-
-class ProfileItem {
-
-}

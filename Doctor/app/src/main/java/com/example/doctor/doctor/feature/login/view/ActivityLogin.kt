@@ -1,18 +1,20 @@
-package com.example.doctor.login.view
+package com.example.doctor.doctor.feature.login.view
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.coordinatorlayout.widget.CoordinatorLayout
 import com.example.doctor.R
-import com.example.doctor.login.loginviewmodel.LoginViewModel
-import com.example.doctor.login.data.ValidarLogin
+import com.example.doctor.doctor.feature.login.viewmodel.LoginViewModel
+import com.example.doctor.doctor.data.model.ValidarLogin
+import com.example.doctor.doctor.feature.profile.view.ActivityProfile
 import com.google.android.material.snackbar.Snackbar
 
 class ActivityLogin : AppCompatActivity(R.layout.activity_login),
     FragmentLogin.IshowForgotPasswordDialog {
 
-    private val viewModel:LoginViewModel by viewModels()
+    private val viewModel: LoginViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -43,6 +45,11 @@ class ActivityLogin : AppCompatActivity(R.layout.activity_login),
     private fun observe(){
         viewModel.login.observe(this){
             if(!it){showLoginStatusSnackbar()}
+            if(it){
+                var intent = Intent(this,ActivityProfile::class.java)
+                //intent.putExtra("chaveNome1",campoDeTexto1.text.toString()) //exemplo de como enviar dados para a segunda activity
+                startActivity(intent)
+            }
         }
     }
 }

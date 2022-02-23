@@ -1,7 +1,9 @@
-package profile
+package com.example.doctor.doctor.data.repository
 
-import androidx.constraintlayout.helper.widget.Flow
+import com.example.doctor.doctor.data.model.ProfileResponse
+import com.example.doctor.doctor.data.network.Api
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.flowOn
 
@@ -11,7 +13,6 @@ class UserRepository(private val api: Api = Api.instance) {
     }.flowOn(Dispatchers.IO)
 
     companion object{
-        val instance by lazy{UserRepository()}
+        val instance by lazy{ UserRepository() }
     }
 }
-// TODO: 18/02/2022 Verificar o que é ProfileResponse; a instância da interface Api; a função emit e o conteúdo da função getProfile().
